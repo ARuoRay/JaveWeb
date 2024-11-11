@@ -29,19 +29,20 @@ import jakarta.validation.Valid;
  * GET    /room/{roomId} 查詢指定會議室(單筆)
  * POST   /room          新增會議室
  * PUT    /room/{roomId} 完整修改會議室(同時修改 roomName 與 roomSize)
- * PATCH  /room/{roomId} 部分欄位修改會議室(只修改  roomName 或 roomSize etc…)
- * DETETE /room/{roomId} 刪除會議室
+ * PATCH  /room/{roomId} 部分欄位修改會議室(只修改 roomName 或 roomSize etc…)
+ * DELETE /room/{roomId} 刪除會議室
  * --------------------------------------------------------------------
  * */
+
 @Controller
-@RequestMapping(value = {"/room","rooms"})
+@RequestMapping(value = {"/room","/rooms"})
 public class RoomController {
 
 	@Autowired
 	private RoomService roomService;
 	
 	@GetMapping
-	public String getRooms(Model model) {
+	public String getRooms(Model model,@ModelAttribute RoomDto roomDto) {
 		List<RoomDto> roomDtos=roomService.getAllRooms();
 		model.addAttribute("roomDtos",roomDtos);
 		
@@ -61,7 +62,7 @@ public class RoomController {
 	@GetMapping("/delete/{roomId}")
 	public String deleteRoom(@PathVariable("roomId")Integer roomId) {
 		roomService.deleteRoom(roomId);
-		return"redirect/rooms";
+		return"redirect:/rooms";
 	}
 	
 	@ExceptionHandler({RoomException.class})
@@ -70,5 +71,20 @@ public class RoomController {
 		return "error";
 	}
 	
+	@GetMapping("/{roomId}")
+	public String getRoom(@PathVariable Integer roomId,Model model) {
+		RoomDto roomDto=roomService.getRoomById(roomId);
+		model.addAttribute("roomDto",roomDto);
+		return "room_update";
+	}
 	
+	@PostMapping("/update/{roomId}")
+	public String updateRoom(@PathVariable Integer roomId,@Valid @ModelAttribute RoomDto roomDto,BindingResult bindingResult,Model model) {
+		if(bindingResult.hasErrors()) {
+			model.addAttribute("roomDto",roomDto);
+			return"room_update";
+		}
+		roomService.updateRoom(roomId, roomDto);
+		return"redirect:/rooms";
+	}
 }

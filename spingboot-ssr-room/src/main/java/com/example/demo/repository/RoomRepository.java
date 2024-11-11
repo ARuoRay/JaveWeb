@@ -12,7 +12,7 @@ import com.example.demo.model.entity.Room;
 @Repository
 public interface RoomRepository extends JpaRepository<Room, Integer> {
 
-	List<Room> findByRoomSizeGreaterThen(Integer size);
+	List<Room> findByRoomSizeGreaterThan(Integer size);
 	
 	@Query("select r from Room r where r.roomSize >:size")
 	List<Room> findByRoomSizeGreaterThan1(Integer size);
