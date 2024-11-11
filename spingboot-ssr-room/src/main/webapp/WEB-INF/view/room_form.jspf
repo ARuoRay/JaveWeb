@@ -1,0 +1,15 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" perfix="sp" %>
+
+<sp:form class="pure-form" modelAttribute="roomDto" action="/room" method="post">
+		<fieldset>
+				<legend>Room表單</legend>
+				Room Id:<sp:input type="number" path="roomId" /><p/>
+				Room Name:<sp:input type="text" path="roomName"/><p/>
+				Room Size:<sp:input type="number" path="roomSize"/><p/>
+				<button type="submit" class="pure-button pure-button-primary">新增</button>
+		</fieldset>
+
+</sp:form>    
