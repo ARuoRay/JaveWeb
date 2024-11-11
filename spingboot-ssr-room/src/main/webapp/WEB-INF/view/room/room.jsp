@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java"  isErrorPage="true" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" %>
 <%@ taglib uri="jakarta.tags.core" perfix="c" %>
 <%@ taglib uri="jakarta.tags.fmt" perfix="fmt" %>
 <!DOCTYPE html>
@@ -26,13 +26,13 @@
 				
 				<!-- 內容 -->
 				<td valign="top">
-					<%@ include file="/WEB-INF/view/room_form.jspf" %>
+					<%@ include file="/WEB-INF/view/room_list.jspf" %>
 					
 				</td>
 				
 				</tr>
 			</table>
-			&{ roomDtos }
+			${ roomDtos }
 			</div>
 	</body>
 </html>
