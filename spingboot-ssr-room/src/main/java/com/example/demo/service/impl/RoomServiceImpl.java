@@ -38,7 +38,7 @@ public class RoomServiceImpl implements RoomService {
 	@Override
 	public RoomDto getRoomById(Integer roomId) {
 		Room room=roomRepositoryJdbc.findById(roomId)
-							.orElseThrow(()->new RoomNotFoundException("找不到房間:roomId:"+roomId));
+							.orElseThrow(()->new RoomNotFoundException("找不到會議室:roomId:"+roomId));
 		return roomMapper.toDto(room);
 	}
 

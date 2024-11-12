@@ -46,14 +46,14 @@ public class RoomController {
 		List<RoomDto> roomDtos=roomService.getAllRooms();
 		model.addAttribute("roomDtos",roomDtos);
 		
-		return"room";
+		return"room/room";
 	}
 	
 	@PostMapping
 	public String addRoom(@Valid @ModelAttribute RoomDto roomDto,BindingResult bindingResult,Model model) {
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("roomDtos",roomService.getAllRooms());
-			return"room";
+			return"room/room";
 		}
 		roomService.addRoom(roomDto);
 		return"redirect:/rooms";
@@ -75,14 +75,14 @@ public class RoomController {
 	public String getRoom(@PathVariable Integer roomId,Model model) {
 		RoomDto roomDto=roomService.getRoomById(roomId);
 		model.addAttribute("roomDto",roomDto);
-		return "room_update";
+		return "room/room_update";
 	}
 	
 	@PostMapping("/update/{roomId}")
 	public String updateRoom(@PathVariable Integer roomId,@Valid @ModelAttribute RoomDto roomDto,BindingResult bindingResult,Model model) {
 		if(bindingResult.hasErrors()) {
 			model.addAttribute("roomDto",roomDto);
-			return"room_update";
+			return"room/room_update";
 		}
 		roomService.updateRoom(roomId, roomDto);
 		return"redirect:/rooms";

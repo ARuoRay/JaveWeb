@@ -6,6 +6,7 @@ import com.example.demo.model.dto.RoomDto;
 
 public interface RoomService {
 	
+	
 	public List<RoomDto>getAllRooms();
 	public RoomDto getRoomById(Integer roomId);
 	

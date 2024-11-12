@@ -43,6 +43,6 @@ public class Room {
 	@Column(name="room_name",nullable = false,unique = true)
 	private String roomName;
 	
-	@Column(name = "room_size")
+	@Column(name = "room_size",columnDefinition = "integer default 0")
 	private Integer roomSize;
 }

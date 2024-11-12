@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" isErrorPage="true" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
 <!DOCTYPE html>
@@ -14,8 +14,10 @@
 		
 		<div style="padding:15px">
 			<div class="pure-form">
+			<fieldset>
 				<legend>發生錯誤</legend>
-				${message }
+				${message }			
+			</fieldset>
 			</div>
 		</div>
 	</body>
