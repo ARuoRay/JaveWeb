@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Person Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #chat {
+            display: flex;
+            width: 800px;
+            max-width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .chat-window {
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ccc;
+            height: 500px;
+        }
+        .chat-window:last-child {
+            border-right: none;
+        }
+        #messages1, #messages2 {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            max-width: 70%;
+        }
+        .user1 {
+            align-self: flex-start;
+            background-color: #e1f5fe;
+        }
+        .user2 {
+            align-self: flex-end;
+            background-color: #c8e6c9;
+        }
+        #messageInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Add space between buttons */
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat">
+        <!-- User 1 Chat Window -->
+        <div class="chat-window">
+            <div id="messages1"></div>
+            <input type="text" id="messageInput1" placeholder="User 1: Type a message" onkeydown="checkEnter(event, 'user1')">
+            <button onclick="sendMessage('user1')">Send as User 1</button>
+        </div>
+
+        <!-- User 2 Chat Window -->
+        <div class="chat-window">
+            <div id="messages2"></div>
+            <input type="text" id="messageInput2" placeholder="User 2: Type a message" onkeydown="checkEnter(event, 'user2')">
+            <button onclick="sendMessage('user2')">Send as User 2</button>
+        </div>
+    </div>
+
+    <script>
+        // 發送訊息功能
+        function sendMessage(user) {
+            var messageInput = document.getElementById('messageInput' + (user === 'user1' ? '1' : '2'));
+            var messageText = messageInput.value.trim();
+            
+            if (messageText !== "") {
+                var messagesDiv = document.getElementById('messages' + (user === 'user1' ? '1' : '2'));
+                var messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                
+                // 根據用戶決定顯示的位置和顏色
+                if (user === 'user1') {
+                    messageElement.classList.add('user1');
+                } else {
+                    messageElement.classList.add('user2');
+                }
+                
+                messageElement.textContent = messageText;
+                messagesDiv.appendChild(messageElement);
+                
+                // 清空訊息輸入框
+                messageInput.value = '';
+                
+                // 滾動至訊息框底部
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }
+        }
+
+        // 偵測按下 Enter 鍵時發送訊息
+        function checkEnter(event, user) {
+            if (event.key === 'Enter') {
+                sendMessage(user);  // 假設按下 Enter 鍵時發送訊息
+            }
+        }
+    </script>
+
+</body>
+</html>

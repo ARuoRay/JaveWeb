@@ -1,0 +1,77 @@
+2024-11-15T14:52:05.416+08:00  INFO 9824 --- [chatroom] [main] com.example.ChatroomApplication          : Starting ChatroomApplication using Java 21.0.4 with PID 9824 (C:\Ray_JavaClass\WEB\chatroom\target\classes started by NTPU in C:\Ray_JavaClass\WEB\chatroom)
+2024-11-15T14:52:05.417+08:00  INFO 9824 --- [chatroom] [main] com.example.ChatroomApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T14:52:05.724+08:00  INFO 9824 --- [chatroom] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T14:52:05.752+08:00  INFO 9824 --- [chatroom] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2024-11-15T14:52:05.994+08:00  INFO 9824 --- [chatroom] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-11-15T14:52:06.003+08:00  INFO 9824 --- [chatroom] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T14:52:06.003+08:00  INFO 9824 --- [chatroom] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T14:52:06.032+08:00  INFO 9824 --- [chatroom] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T14:52:06.032+08:00  INFO 9824 --- [chatroom] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 591 ms
+2024-11-15T14:52:06.110+08:00  INFO 9824 --- [chatroom] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T14:52:06.136+08:00  INFO 9824 --- [chatroom] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T14:52:06.153+08:00  INFO 9824 --- [chatroom] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T14:52:06.317+08:00  INFO 9824 --- [chatroom] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T14:52:06.332+08:00  INFO 9824 --- [chatroom] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T14:52:06.421+08:00  INFO 9824 --- [chatroom] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30c01c37
+2024-11-15T14:52:06.422+08:00  INFO 9824 --- [chatroom] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T14:52:06.450+08:00  WARN 9824 --- [chatroom] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T14:52:06.451+08:00  WARN 9824 --- [chatroom] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-15T14:52:06.862+08:00  INFO 9824 --- [chatroom] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T14:52:06.905+08:00  INFO 9824 --- [chatroom] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T14:52:07.038+08:00  WARN 9824 --- [chatroom] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T14:52:07.049+08:00  INFO 9824 --- [chatroom] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-15T14:52:07.221+08:00  INFO 9824 --- [chatroom] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2024-11-15T14:52:07.225+08:00  INFO 9824 --- [chatroom] [main] com.example.ChatroomApplication          : Started ChatroomApplication in 2.012 seconds (process running for 2.315)
+2024-11-15T14:52:21.215+08:00  INFO 9824 --- [chatroom] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-15T14:52:21.216+08:00  INFO 9824 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-15T14:52:21.216+08:00  INFO 9824 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-15T14:52:21.309+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:52:26.330+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:54:05.196+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:54:09.798+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:54:11.321+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:54:53.050+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:55:00.828+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:55:27.667+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:55:32.760+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:32.119+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:32.744+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:33.047+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:33.205+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:33.384+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:33.495+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:33.638+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:56:54.141+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T14:57:44.093+08:00  WARN 9824 --- [chatroom] [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T15:01:15.432+08:00  INFO 9824 --- [chatroom] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-15T15:01:15.437+08:00  INFO 9824 --- [chatroom] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T15:01:15.438+08:00  INFO 9824 --- [chatroom] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T15:01:15.441+08:00  INFO 9824 --- [chatroom] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T15:01:16.538+08:00  INFO 3104 --- [chatroom] [main] com.example.ChatroomApplication          : Starting ChatroomApplication using Java 21.0.4 with PID 3104 (C:\Ray_JavaClass\WEB\chatroom\target\classes started by NTPU in C:\Ray_JavaClass\WEB\chatroom)
+2024-11-15T15:01:16.539+08:00  INFO 3104 --- [chatroom] [main] com.example.ChatroomApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T15:01:16.836+08:00  INFO 3104 --- [chatroom] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T15:01:16.863+08:00  INFO 3104 --- [chatroom] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2024-11-15T15:01:17.103+08:00  INFO 3104 --- [chatroom] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2024-11-15T15:01:17.111+08:00  INFO 3104 --- [chatroom] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T15:01:17.111+08:00  INFO 3104 --- [chatroom] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T15:01:17.140+08:00  INFO 3104 --- [chatroom] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T15:01:17.140+08:00  INFO 3104 --- [chatroom] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
+2024-11-15T15:01:17.217+08:00  INFO 3104 --- [chatroom] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T15:01:17.244+08:00  INFO 3104 --- [chatroom] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T15:01:17.260+08:00  INFO 3104 --- [chatroom] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T15:01:17.430+08:00  INFO 3104 --- [chatroom] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T15:01:17.446+08:00  INFO 3104 --- [chatroom] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T15:01:17.527+08:00  INFO 3104 --- [chatroom] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@595814a1
+2024-11-15T15:01:17.528+08:00  INFO 3104 --- [chatroom] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T15:01:17.550+08:00  WARN 3104 --- [chatroom] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T15:01:17.551+08:00  WARN 3104 --- [chatroom] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-15T15:01:17.951+08:00  INFO 3104 --- [chatroom] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T15:01:17.977+08:00  INFO 3104 --- [chatroom] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T15:01:18.094+08:00  WARN 3104 --- [chatroom] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T15:01:18.109+08:00  INFO 3104 --- [chatroom] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-15T15:01:18.276+08:00  INFO 3104 --- [chatroom] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2024-11-15T15:01:18.280+08:00  INFO 3104 --- [chatroom] [main] com.example.ChatroomApplication          : Started ChatroomApplication in 1.934 seconds (process running for 2.235)
+2024-11-15T15:01:24.646+08:00  INFO 3104 --- [chatroom] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-15T15:01:24.646+08:00  INFO 3104 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-15T15:01:24.647+08:00  INFO 3104 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-15T15:01:40.883+08:00  WARN 3104 --- [chatroom] [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
