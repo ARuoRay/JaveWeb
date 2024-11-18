@@ -75,3 +75,7 @@
 2024-11-15T15:01:24.646+08:00  INFO 3104 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-11-15T15:01:24.647+08:00  INFO 3104 --- [chatroom] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-11-15T15:01:40.883+08:00  WARN 3104 --- [chatroom] [http-nio-8085-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-11-15T16:38:44.673+08:00  INFO 3104 --- [chatroom] [RMI TCP Connection(108)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-15T16:38:44.678+08:00  INFO 3104 --- [chatroom] [RMI TCP Connection(108)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:38:44.679+08:00  INFO 3104 --- [chatroom] [RMI TCP Connection(108)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T16:38:44.680+08:00  INFO 3104 --- [chatroom] [RMI TCP Connection(108)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
