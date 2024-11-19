@@ -6,12 +6,15 @@ import org.springframework.stereotype.Service;
 import com.example.tx.service.BookService;
 import com.example.tx.service.BuyService;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class BuyServiceImpl implements BuyService {
 
 	@Autowired
 	private BookService bookService;
 
+	@Transactional
 	@Override
 	public void buyOneBook(String username, Integer bookId) {
 		
