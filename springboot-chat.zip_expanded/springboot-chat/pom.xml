@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>springboot-cart</artifactId>
+	<artifactId>springboot-chat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-cart</name>
-	<description>CART</description>
+	<name>springboot-chat</name>
+	<description>Chat project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +30,7 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+	
 	<!-- Model Mapper DTO 與 Entity 互轉 -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
@@ -48,6 +49,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
 
 		<dependency>
