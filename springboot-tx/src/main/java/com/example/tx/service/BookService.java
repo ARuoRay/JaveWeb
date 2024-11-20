@@ -1,5 +1,7 @@
 package com.example.tx.service;
 
+import com.example.tx.exception.InsufficientAmount;
+
 public interface BookService {
 	
 	
@@ -11,5 +13,5 @@ public interface BookService {
 	
 	void reduceBookAmount(Integer bookId,Integer amountToReduce);
 	
-	void reduceWalletBalance(String username,Integer bookPrice);
+	void reduceWalletBalance  (String username,Integer bookPrice)throws InsufficientAmount ;
 }
